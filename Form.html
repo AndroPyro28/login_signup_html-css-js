@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form__container" autocomplete="off">
+      <h1>Create Your Account</h1>
+
+      <div class="input__section">
+        <div class="input__container">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Enter Full Name"
+            onkeyup="checkFullName()"
+            onfocusout="checkFullName()"
+          />
+          <div class="error__message"></div>
+        </div>
+
+        <div class="input__container">
+          <label for="emailAddress">Email Address</label>
+          <input
+            type="email"
+            id="emailAddress"
+            placeholder="Enter Email"
+            onkeyup="checkEmail()"
+            onfocusout="checkEmail()"
+          />
+          <div class="error__message"></div>
+        </div>
+
+        <div class="input__container">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            onkeyup="checkPassword()"
+            onfocusout="checkPassword()"
+          />
+          <div class="error__message"></div>
+        </div>
+
+        <div class="input__container">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Re-enter Password"
+            onkeyup="checkConfirmationPassword()"
+            onfocusout="checkConfirmationPassword()"
+          />
+          <div class="error__message"></div>
+        </div>
+      </div>
+
+      <div class="button__container">
+        <button type="reset" id="btn-reset">Reset</button>
+        <button type="submit" id="btn-signup">Signup</button>
+      </div>
+    </form>
+
+    <script src="App.js" defer></script>
+  </body>
+</html>

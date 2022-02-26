@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(221, 221, 221);
+    font-family: 'Roboto', cursive;
+}
+
+
+.form__container {
+    box-shadow: 1px 3px 5px rgb(143, 141, 141),  1px 3px 5px rgb(145, 144, 144) ;
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.form__container h1 {
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+    font-weight: lighter;
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.input__section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.input__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.input__container label {
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: rgb(61, 61, 61);
+}
+
+.input__container input {
+    height: 30px;
+    border:gray solid 1.8px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.button__container {
+    align-self: end;
+    
+}
+.button__container button {
+    padding: 7px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    color: white;
+}
+
+.button__container button:nth-child(1) {
+    background: rgb(199, 62, 62);
+}
+.button__container button:nth-child(2) {
+    background: rgb(53, 123, 204);
+}
+.error__message {
+    
+    color: red;
+    font-size: 15px;
+}
